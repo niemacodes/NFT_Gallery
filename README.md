@@ -1,23 +1,16 @@
-# Next.js + Tailwind CSS Example
+# NFT Gallery 
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+Created an NFT gallery to display and explore any wallet's NFT's using Alchemy's NFT API: 
 
-## Deploy your own
+Learned things like:
+- How to fetch NFTs that belong to a wallet address
+- How to fetch NFTs based on the collection it belongs to
+- How to use RESTful API calls via Alchemy NFT API to fetch and display NFTs
+- How to style my website with Next JS and Tailwind CSS
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-# or
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+Upcoming updates:
+- Copy contract address functionality 
+- Viewing more than 100 NFT's at once 
+ 
+Example displaying full NFT collection:
+![nft_gallery](https://user-images.githubusercontent.com/44388988/170808270-fd8a186e-c63c-4cfe-bd82-4244a43af970.png)
