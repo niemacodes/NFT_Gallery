@@ -71,29 +71,30 @@ const Home = () => {
   return (
     <div className="flex flex-col items-center justify-center py-8 gap-y-3">
       <div className="flex flex-col w-full items-center justify-center gap-y-2">
-        <input className="w-2/5 bg-slate-100 py-2 px-2 rounded-lg text-gray-800 focus:outline-blue-300 disabled:bg-slate-50 disabled:text-gray-50"
+        <label className="font-bold text-4xl items-center justify-center">NFT Gallery Explorer</label>
+        <input className="w-2/5 bg-slate-100 py-2 px-2 rounded-lg text-gray-800 focus:outline-blue-300 disabled:bg-slate-50 disabled:text-gray-50 outline outline-2"
           disabled={fetchForCollection}
           onChange={(e) =>{setWalletAddress(e.target.value)}}
           value={wallet}
           type={"text"}
           placeholder="Add your wallet address:">
         </input>
-        <input className="w-2/5 bg-slate-100 py-2 px-2 rounded-lg text-gray-800 focus:outline-blue-300 disabled:bg-slate-50 disabled:text-gray-50"
+        <input className="w-2/5 bg-slate-100 py-2 px-2 rounded-lg text-gray-800 focus:outline-blue-300 disabled:bg-slate-50 disabled:text-gray-50 outline outline-2"
           onChange={(e)=>{setCollectionAddress(e.target.value)}}
           value={collection}
           type={"text"}
           placeholder="Add the collection address:">
         </input>
-        <label className="text-gray-600">
+        <label className="text-gray-500 text-xl">
           <input 
             onChange={(e) => {setFetchForCollection(e.target.checked)}}
             type={"checkbox"}
             className="mr-2">
           </input>
             Fetch for collection
-          </label>
+        </label>
         <button
-          className={"disabled:bg-slate-500 text-white bg-blue-400 px-4 py-2 mt-3 rounded-sm w-1/5"}
+          className={"w-2/5 disabled:bg-slate-500 px-2 py-2 rounded-lg focus:outline-white text-white bg-blue-400 mt-3 "}
           onClick={
             () => {
               if(fetchForCollection){
@@ -102,8 +103,12 @@ const Home = () => {
                 fetchNFTs();
               }
             }
-          }>Let's go! </button>
+          }>Let's go! 
+        </button>
+      <div className="divide-dashed divide-y divide-gray-400"></div>
       </div>  
+
+
       <div className="flex flex-wrap gap-y-8 mt-4 w-5/6 gap-x-8 justify-center">
           {
             NFTs.length && NFTs.map(nft => {
